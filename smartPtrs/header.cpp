@@ -1,5 +1,5 @@
 #include <iostream>
-#include "smartPointer.hpp"
+#include "smartPtrs.hpp"
 int main() {
     int count;
     unique_ptr<int[]> arr = readNumbers(count);

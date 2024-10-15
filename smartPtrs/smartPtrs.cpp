@@ -1,14 +1,15 @@
+// A program thar utilizes smart pointers
 #include <iostream>
 #include <memory> 
 using namespace std;
 
-// read numbers into an array
+// read numbers into an array using unique
 unique_ptr<int[]> readNumbers(int& count) {
     int input;
     count = 0;
 
     cout << "Enter numbers (enter -1 to stop):" << endl;
-    while (true) {
+    while (true) { // Enter integers
         cin >> input;
         if (input == -1) {
             break;
@@ -32,7 +33,7 @@ unique_ptr<int[]> readNumbers(int& count) {
     return arr;
 }
 
-// to calculate the sum of the array elements
+// function to calculate the sum of the array elements
 int calculateSum(const unique_ptr<int[]>& arr, int count) {
     int sum = 0;
     for (int i = 0; i < count; ++i) {
