@@ -1,6 +1,7 @@
 // A program thar utilizes smart pointers
 #include <iostream>
 #include <memory> 
+#include "smartPtrs.hpp"
 using namespace std;
 
 // read numbers into an array using unique
